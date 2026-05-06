@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#0d1220"/>
+  <!-- Mini cube isométrique -->
+  <g transform="translate(16, 16)">
+    <!-- Top face -->
+    <polygon points="-7,-3 0,-7 7,-3 0,1" fill="#1a2440" stroke="#5a8fd4" stroke-width="0.6"/>
+    <!-- Left face -->
+    <polygon points="-7,-3 -7,5 0,9 0,1" fill="#1f2940" stroke="#5a8fd4" stroke-width="0.6"/>
+    <!-- Front face (signal yellow accent) -->
+    <polygon points="0,1 7,-3 7,5 0,9" fill="#241a1a" stroke="#e8c441" stroke-width="0.8"/>
+    <!-- Center dot -->
+    <circle cx="3" cy="2" r="1.4" fill="#e8c441"/>
+  </g>
+</svg>

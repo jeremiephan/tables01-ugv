@@ -1,0 +1,1754 @@
+{
+  "metadata": {
+    "title": "Tables 01 · UGV — European market dataset",
+    "version": "1.0",
+    "last_updated": "2026-04-29",
+    "publisher": "Starburst Aerospace & Defense",
+    "methodology": "https://tables01.starburst.aero#methodology",
+    "operators_count": 38,
+    "partnerships_count": 6,
+    "countries": [
+      "CZ",
+      "DE",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "HR",
+      "IL",
+      "IT",
+      "LV",
+      "PL",
+      "UA",
+      "UK",
+      "USA"
+    ],
+    "doctrines": {
+      "A": "Mass Attritable",
+      "B": "Modular Hybrid",
+      "C": "Premium AI Stack",
+      "D": "Ukrainian-EU Hub",
+      "E": "Logistics Specialist"
+    },
+    "faces": [
+      {
+        "id": "F1",
+        "label": "Logistics",
+        "axes": {
+          "x": "Cadence",
+          "xLow": "LOW CADENCE",
+          "xHigh": "HIGH CADENCE",
+          "xScale": [
+            "artisanal/prototype",
+            "industrial scale-up",
+            "mass production confirmed"
+          ],
+          "y": "Autonomy (logistic)",
+          "yLow": "LOW AUTONOMY",
+          "yHigh": "HIGH AUTONOMY",
+          "yScale": [
+            "remote-operated",
+            "GPS-denied + follow-me + path planning",
+            "full mission autonomy multi-platform"
+          ]
+        }
+      },
+      {
+        "id": "F2",
+        "label": "Combat AP",
+        "axes": {
+          "x": "Unit price (log)",
+          "xLow": "LOW PRICE",
+          "xHigh": "HIGH PRICE",
+          "xScale": [
+            "$5K-$50K (mass attritable)",
+            "$50K-$500K (mid-tier)",
+            "$500K-$5M (premium combat)"
+          ],
+          "y": "Battle validation",
+          "yLow": "LOW BATTLE PROOF",
+          "yHigh": "HIGH BATTLE PROOF",
+          "yScale": [
+            "none / trials only",
+            "combat-deployed limited",
+            "combat-validated sustained"
+          ]
+        }
+      },
+      {
+        "id": "F3",
+        "label": "EOD-Route Clearance",
+        "axes": {
+          "x": "Sensor sophistication",
+          "xLow": "LOW SENSORS",
+          "xHigh": "HIGH SENSORS",
+          "xScale": [
+            "basic cameras + sensors",
+            "multi-spectral + manipulator arm",
+            "AI-enabled + advanced sensors (CBRN spectro, GPR, IED detection)"
+          ],
+          "y": "Heritage years",
+          "yLow": "LOW HERITAGE",
+          "yHigh": "HIGH HERITAGE",
+          "yScale": [
+            "< 5 ans EOD/CBRN",
+            "5-15 ans",
+            "15+ ans heritage spécifique"
+          ]
+        }
+      },
+      {
+        "id": "F4",
+        "label": "ISR",
+        "axes": {
+          "x": "Autonomy",
+          "xLow": "LOW AUTONOMY",
+          "xHigh": "HIGH AUTONOMY",
+          "xScale": [
+            "remote-operated",
+            "semi-autonomous (waypoint, follow-me, SLAM)",
+            "full autonomous mission (multi-platform, swarming)"
+          ],
+          "y": "Sensor stack maturity",
+          "yLow": "LOW SENSOR STACK",
+          "yHigh": "HIGH SENSOR STACK",
+          "yScale": [
+            "basic cameras",
+            "thermal + IR + LIDAR multi-modal",
+            "AI-enabled (radar, EW detection, targeting, swarm coordination)"
+          ]
+        }
+      },
+      {
+        "id": "F5",
+        "label": "Civil-defense",
+        "axes": {
+          "x": "Reliability (MTBF)",
+          "xLow": "LOW RELIABILITY",
+          "xHigh": "HIGH RELIABILITY",
+          "xScale": [
+            "consumer-grade",
+            "industrial-grade",
+            "audited/certified reliability operations"
+          ],
+          "y": "Safety certification",
+          "yLow": "LOW CERTIFICATION",
+          "yHigh": "HIGH CERTIFICATION",
+          "yScale": [
+            "none",
+            "partial (CE, ISO generic)",
+            "dedicated (EN 1846 firefighting, ISO 18497 agri, MSHA mining, UN demining)"
+          ]
+        }
+      }
+    ]
+  },
+  "operators": [
+    {
+      "code": "TEN-TM",
+      "name": "Tencore",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "cadence_score": 4,
+      "deployment_score": 4,
+      "funding_scale": 2,
+      "last_raise": "$3.74M",
+      "round_info": "MITS Capital · Jul 2025",
+      "headcount": "215",
+      "deployment_signal": "2,000+ TerMIT units · 4 EU JVs in 2026",
+      "key_partnerships": [
+        "INSTA Group (jv)",
+        "Quantum Systems (jv)",
+        "Shark Robotics (jv)",
+        "DevDroid (partnership)"
+      ],
+      "note": "Hub UA-EU absolu. JVs FERNRIDE, INSTA, QTI Quantum, Shark.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Defense Blog, Euromaidan Press, Oboronka"
+      }
+    },
+    {
+      "code": "DEV-TW",
+      "name": "DevDroid",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 3
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 4,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Hundreds of TW 12.7 strike UGVs UA",
+      "key_partnerships": [
+        "Tencore (partnership)"
+      ],
+      "note": "45-day frontline holding documented. Mass-attritable combat.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · Calibre Defense"
+      }
+    },
+    {
+      "code": "TEM-UG",
+      "name": "Temerland",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 4,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "GNOM/Targan demining + CASEVAC UA frontline",
+      "key_partnerships": [],
+      "note": "Mine clearance + casevac specialist.",
+      "source": {
+        "tier": "C",
+        "raw": "Tier C · TechUkraine"
+      }
+    },
+    {
+      "code": "ROB-IC",
+      "name": "Roboneers",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 4,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Ironclad UGV mass UA frontline",
+      "key_partnerships": [],
+      "note": "Combat-iterating UA pure-play.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · Forbes UA"
+      }
+    },
+    {
+      "code": "UKP-RO",
+      "name": "UkrPrototype",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 3
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 4,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Multiple UGV variants UA frontline",
+      "key_partnerships": [],
+      "note": "Diverse combat platforms iterated.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · MoD Ukraine"
+      }
+    },
+    {
+      "code": "RAT-RS",
+      "name": "Ratel Robotics",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 4,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Ratel S/L combat + logistics 6km UA",
+      "key_partnerships": [],
+      "note": "Anti-tank kamikaze + logistics dual capability.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · Forbes, Reuters"
+      }
+    },
+    {
+      "code": "ABR-UN",
+      "name": "ABRIS Design Group",
+      "country": "UA",
+      "doctrine": {
+        "code": "A",
+        "label": "Mass Attritable"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 4,
+      "funding_scale": 2,
+      "last_raise": "$250K + xTech",
+      "round_info": "US Army xTech win Mar 2026 · 10-yr G-TEAD",
+      "headcount": "[tc]",
+      "deployment_signal": "UNEX UGV codified UA · US Army xTech 2026",
+      "key_partnerships": [],
+      "note": "Multi-country production UA-PL-CZ. Mountain Horse Solutions partnership US.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · EDR Magazine, MoD Ukraine"
+      }
+    },
+    {
+      "code": "ARX-GE",
+      "name": "ARX Robotics",
+      "country": "DE",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 3,
+      "funding_scale": 3,
+      "last_raise": "€42M cumul",
+      "round_info": "Series A · 2025",
+      "headcount": "~150 [tc]",
+      "deployment_signal": "6 EU armies · Combat Gereon UA · scaling 1→85/day Deutz",
+      "key_partnerships": [
+        "Quantum Systems (partnership)"
+      ],
+      "note": "JV Frontline UA + Helsing partnership Sep 2025. Hector medium-class unveiled Dec 2025.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Defense Post, Janes"
+      }
+    },
+    {
+      "code": "RHM-MM",
+      "name": "Rheinmetall",
+      "country": "DE",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 3,
+      "funding_scale": 5,
+      "last_raise": "Listed Frankfurt",
+      "round_info": "Public co. (RHM.DE)",
+      "headcount": "~33,000",
+      "deployment_signal": "Mission Master SP/CXT2 · DOK-ING acquired Mar 2026 (51%)",
+      "key_partnerships": [
+        "DOK-ING (cross-face)"
+      ],
+      "note": "Hub EU consolidator. 3 markets at top (3,3) post-DOK-ING acquisition. LRMV JV with Leonardo (combat vehicles, non-UGV).",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Reuters, corporate"
+      }
+    },
+    {
+      "code": "QSY-MA",
+      "name": "Quantum Systems",
+      "country": "DE",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 3,
+      "funding_scale": 5,
+      "last_raise": "$618M cumul",
+      "round_info": "Series C ext · Nov 2025 · €3+Bn post",
+      "headcount": "~1,000",
+      "deployment_signal": "Mandrill UGV + Trinity/Vector UAS · 6+ EU armies · 3 JVs (QFI, QTI, QWI)",
+      "key_partnerships": [
+        "Tencore (jv)",
+        "ARX Robotics (partnership)"
+      ],
+      "note": "Triple unicorn. Build with Ukraine: QFI Frontline + QTI Tencore + QWI WIY.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · EDR Magazine, ESUT, Munich Startup"
+      }
+    },
+    {
+      "code": "KND-OP",
+      "name": "KNDS",
+      "country": "DE",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "JV state-backed",
+      "round_info": "KMW + Nexter merger 2015",
+      "headcount": "~10,000",
+      "deployment_signal": "Optio-X20 / Ultro 600 · Italian Army RAS",
+      "key_partnerships": [],
+      "note": "KMW × Milrem THeMIS partnership + 24.9% stake Milrem (2023).",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · KNDS corporate, Janes"
+      }
+    },
+    {
+      "code": "TFL-CT",
+      "name": "Teledyne FLIR",
+      "country": "USA",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 3,
+      "funding_scale": 5,
+      "last_raise": "Listed NYSE",
+      "round_info": "Public co. (TDY)",
+      "headcount": "~13,000",
+      "deployment_signal": "Centaur UGV · iRobot PackBot heritage 1999 · US Army EOD",
+      "key_partnerships": [],
+      "note": "Heritage marché historique EOD/CBRN. Sensor stack premium thermal/IR.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Teledyne FLIR corporate"
+      }
+    },
+    {
+      "code": "GHO-V6",
+      "name": "Ghost Robotics",
+      "country": "USA",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 3,
+      "last_raise": "$50M+ cumul",
+      "round_info": "Series B · 2024",
+      "headcount": "~150",
+      "deployment_signal": "Vision 60 quadruped · NATO patrol · Tyndall AFB",
+      "key_partnerships": [],
+      "note": "Quadruped niche perimeter/EOD/urban only.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · Defense News"
+      }
+    },
+    {
+      "code": "SWB-SW",
+      "name": "Swarmbotics",
+      "country": "USA",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 2,
+      "last_raise": "$15M [tc]",
+      "round_info": "Series A · 2024",
+      "headcount": "~60 [tc]",
+      "deployment_signal": "Swarm UGVs · US Army trials",
+      "key_partnerships": [],
+      "note": "Swarm autonomy unique — orthogonal to single-platform autonomy.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · Defense Innovation Unit"
+      }
+    },
+    {
+      "code": "OVL-BR",
+      "name": "Overland AI",
+      "country": "USA",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "S",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 4,
+      "last_raise": "$132M cumul",
+      "round_info": "Series B $100M · Dec 2024",
+      "headcount": "~150 [tc]",
+      "deployment_signal": "Brumby + ISV autonomy kit · US Army trials",
+      "key_partnerships": [],
+      "note": "Outlier (3,3) on F1 Logistique + F4 ISR. Most mature autonomy stack of dataset.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Crunchbase, TechCrunch"
+      }
+    },
+    {
+      "code": "GD-MT",
+      "name": "General Dynamics",
+      "country": "USA",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "Listed NYSE",
+      "round_info": "Public co. (GD)",
+      "headcount": "~111,000",
+      "deployment_signal": "MUTT (Multi-Utility Tactical Transport) · USMC",
+      "key_partnerships": [],
+      "note": "Heritage Prime. Combat-tested but not UA mass-deployed.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · GD corporate"
+      }
+    },
+    {
+      "code": "HOW-RM",
+      "name": "Howe & Howe",
+      "country": "USA",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "faceId": "F5",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "Textron subsidiary",
+      "round_info": "Acquired by Textron longstanding",
+      "headcount": "[tc]",
+      "deployment_signal": "Ripsaw M5 RCV · Bayonet amphibious · US firefighting",
+      "key_partnerships": [],
+      "note": "Civil-defense (3,3) firefighting + combat dual-use.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Textron corporate"
+      }
+    },
+    {
+      "code": "NEX-NV",
+      "name": "Nexter Robotics",
+      "country": "FR",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F5",
+          "role": "S",
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 4,
+      "last_raise": "KNDS subsidiary",
+      "round_info": "Part of KNDS group",
+      "headcount": "[tc]",
+      "deployment_signal": "NERVA-S/LG/XX · 27 countries incl. police/SWAT/fire",
+      "key_partnerships": [],
+      "note": "Micro-UGV 3-12kg. CAMELEON-LG variant. Heritage Nexter Robotics 2012.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · KNDS corporate"
+      }
+    },
+    {
+      "code": "ARQ-DR",
+      "name": "Arquus",
+      "country": "FR",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "S",
+          "x": 3,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 1
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 1,
+      "funding_scale": 4,
+      "last_raise": "John Cockerill subsidiary",
+      "round_info": "Acquired by John Cockerill July 2024",
+      "headcount": "~1,500",
+      "deployment_signal": "Drailer 750kg payload · ScarabeE recon · DGA",
+      "key_partnerships": [],
+      "note": "Renault × Arquus new compact UGV unveiled at Eurosatory 2026.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Army Recognition"
+      }
+    },
+    {
+      "code": "SHK-CO",
+      "name": "Shark Robotics",
+      "country": "FR",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F5",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "€10M",
+      "round_info": "Move Capital · Jan 2023",
+      "headcount": "~50 [tc]",
+      "deployment_signal": "Colossus firefighting BSPP Paris · Notre-Dame fire 2019 · 40 units UA SESU",
+      "key_partnerships": [
+        "Tencore (jv)"
+      ],
+      "note": "JV Tencore signed 22 Apr 2026. Civil-defense (3,3) certified EN 1846.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · GICAT, Defense Blog"
+      }
+    },
+    {
+      "code": "EXA-IG",
+      "name": "Exail",
+      "country": "FR",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 3
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "Listed Euronext",
+      "round_info": "SBF 120 · €2.5Bn cap (+370% 2025)",
+      "headcount": "~2,000",
+      "deployment_signal": "Iguane EOD/ISR · 70+ marines · Belgian-Dutch rMCM €450M",
+      "key_partnerships": [],
+      "note": "Maritime + INS principal — terrestrial UGV via heritage decades.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Euronext, Marketscreener"
+      }
+    },
+    {
+      "code": "ELB-MR",
+      "name": "Elbit Systems",
+      "country": "IL",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "cadence_score": 3,
+      "deployment_score": 3,
+      "funding_scale": 5,
+      "last_raise": "Listed TASE/NASDAQ",
+      "round_info": "Public co. (ESLT)",
+      "headcount": "~20,000",
+      "deployment_signal": "M-RCV / ROBUST · IDF + UA · $120M EU NATO contract Q4 2024",
+      "key_partnerships": [],
+      "note": "Premium combat (3,3). G-NIUS heritage shared with IAI (dissolved 2016).",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · TASE filings, MRFR"
+      }
+    },
+    {
+      "code": "IAI-RB",
+      "name": "IAI",
+      "country": "IL",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 3
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 3,
+      "funding_scale": 5,
+      "last_raise": "Israel state-owned",
+      "round_info": "Public sector",
+      "headcount": "~15,000",
+      "deployment_signal": "REX MK II / Guardium G-NIUS heritage · IDF border ops 2008+",
+      "key_partnerships": [],
+      "note": "G-NIUS dissolved 2016, heritage Tomcar buggy chassis. RoBattle modern combat.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · IAI corporate"
+      }
+    },
+    {
+      "code": "RBT-PR",
+      "name": "Roboteam",
+      "country": "IL",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 3,
+      "funding_scale": 2,
+      "last_raise": "$62M (pre-acq.)",
+      "round_info": "Acquired Ondas · Nov 2025 · ~$80M",
+      "headcount": "~200 [tc]",
+      "deployment_signal": "Probot/MTGR/TIGR · 30+ countries · USMC $30M 2024",
+      "key_partnerships": [],
+      "note": "Non-VC since acquisition. Multi-mission EOD/ISR/Combat.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Ondas SEC filings"
+      }
+    },
+    {
+      "code": "MIL-TH",
+      "name": "Milrem Robotics",
+      "country": "EE",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F5",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 3,
+      "funding_scale": 4,
+      "last_raise": "Acquired EDGE Group",
+      "round_info": "EDGE 51% (UAE) Feb 2023 + KMW 24.9%",
+      "headcount": "~250",
+      "deployment_signal": "THeMIS / Type-X / HAVOC · 19 customers worldwide · UAE $200M+ 2024",
+      "key_partnerships": [],
+      "note": "iMUGS-2 EDF €50M coordinator. Non-VC investable.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · iMUGS docs, Shephard"
+      }
+    },
+    {
+      "code": "INS-TM",
+      "name": "INSTA Group",
+      "country": "FI",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 1,
+      "funding_scale": 4,
+      "last_raise": "Private",
+      "round_info": "Family-held",
+      "headcount": "~1,300",
+      "deployment_signal": "TerMIT production via Tencore JV (Feb 2026)",
+      "key_partnerships": [
+        "Tencore (jv)"
+      ],
+      "note": "Defense electronics enabler. UGV via Tencore JV only.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · INSTA corporate"
+      }
+    },
+    {
+      "code": "DOK-MV",
+      "name": "DOK-ING",
+      "country": "HR",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "faceId": "F5",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 3,
+      "funding_scale": 3,
+      "last_raise": "Acquired by Rheinmetall 51%",
+      "round_info": "Mar 2026 acquisition",
+      "headcount": "~400",
+      "deployment_signal": "MV-4 + Komodo CBRN + Wingman armed · 80% global mine clearance",
+      "key_partnerships": [
+        "Rheinmetall (cross-face)"
+      ],
+      "note": "Heritage 1992. Civil-defense (3,3) + EOD (3,3). Acquired by Rheinmetall Mar 2026.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Reuters, DOK-ING corporate"
+      }
+    },
+    {
+      "code": "LEO-VK",
+      "name": "Leonardo IDV",
+      "country": "IT",
+      "doctrine": {
+        "code": "C",
+        "label": "Premium AI Stack"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 3
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "Acquired by Leonardo €1.7B",
+      "round_info": "Acquisition Mar 2026",
+      "headcount": "~5,000 (IDV)",
+      "deployment_signal": "Viking 6x6 hybrid 750kg payload · MACE autonomy · Italian Army RAS",
+      "key_partnerships": [],
+      "note": "Post-IDV €1.7B acquisition by Leonardo. MIRA UGV heritage 2008.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · Reuters, Leonardo corporate"
+      }
+    },
+    {
+      "code": "QIN-TL",
+      "name": "QinetiQ",
+      "country": "UK",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 3,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 2,
+      "funding_scale": 5,
+      "last_raise": "Listed LSE",
+      "round_info": "Public co. (QQ.L)",
+      "headcount": "~9,000",
+      "deployment_signal": "Talon family Foster-Miller · Dragon Runner · EOD legacy NATO",
+      "key_partnerships": [],
+      "note": "Heritage marché historique EOD 2000. Non-VC investable.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · LSE filings"
+      }
+    },
+    {
+      "code": "MAC-GO",
+      "name": "MACRO-SYSTEM",
+      "country": "PL",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "~50 [tc]",
+      "deployment_signal": "GOBLIN + GNOM family · Polish Armed Forces",
+      "key_partnerships": [],
+      "note": "Modular small UGV PL. Combat + ISR variants.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · MACRO corporate"
+      }
+    },
+    {
+      "code": "WIT-KU",
+      "name": "WITPiS",
+      "country": "PL",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "State research",
+      "round_info": "Sulejówek institute",
+      "headcount": "[tc]",
+      "deployment_signal": "KUNA in service Polish Army Sept-Oct 2025 · paired with Raven",
+      "key_partnerships": [],
+      "note": "State research institute. Non-VC investable.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · WITPiS corporate"
+      }
+    },
+    {
+      "code": "LPP-HN",
+      "name": "LPP Holding",
+      "country": "CZ",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 1,
+      "funding_scale": 2,
+      "last_raise": "[tc]",
+      "round_info": "2020+ holding",
+      "headcount": "[tc]",
+      "deployment_signal": "Hornet UGV · IDET 2025 · CBRN variant",
+      "key_partnerships": [],
+      "note": "Czech defense holding. Multi-mission UGV.",
+      "source": {
+        "tier": "B",
+        "raw": "Tier B · LPP corporate"
+      }
+    },
+    {
+      "code": "VOP-TR",
+      "name": "VOP CZ",
+      "country": "CZ",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "P",
+          "x": 1,
+          "y": 2
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 2,
+      "funding_scale": 1,
+      "last_raise": "State research",
+      "round_info": "Czech state institute",
+      "headcount": "~1,000",
+      "deployment_signal": "TAROS / UGV-PzV in service Czech Army 2025",
+      "key_partnerships": [],
+      "note": "State research institute. Non-VC investable.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · VOP CZ corporate"
+      }
+    },
+    {
+      "code": "BRA-UH",
+      "name": "BRASA Defence",
+      "country": "LV",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F2",
+          "role": "S",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "faceId": "F5",
+          "role": "S",
+          "x": 2,
+          "y": 1
+        }
+      ],
+      "cadence_score": 2,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "Pre-seed [tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "UNHUMAN · Latvia · Arctic-tested",
+      "key_partnerships": [],
+      "note": "Multi-purpose civil-defense + crisis response.",
+      "source": {
+        "tier": "C",
+        "raw": "Tier C · BRASA corporate"
+      }
+    },
+    {
+      "code": "NAT-NX",
+      "name": "Natrix",
+      "country": "LV",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Natrix UGV · Latvia",
+      "key_partnerships": [],
+      "note": "Niche LV startup.",
+      "source": {
+        "tier": "C",
+        "raw": "Tier C · Natrix corporate"
+      }
+    },
+    {
+      "code": "LVT-EO",
+      "name": "LV-TEH",
+      "country": "LV",
+      "doctrine": {
+        "code": "B",
+        "label": "Modular Hybrid"
+      },
+      "positions": [
+        {
+          "faceId": "F2",
+          "role": "P",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "faceId": "F3",
+          "role": "P",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 1,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "[tc]",
+      "headcount": "[tc]",
+      "deployment_signal": "Small EOD/Combat UGV · Latvia",
+      "key_partnerships": [],
+      "note": "Latvia startup 2024. Basic EOD/Combat capability.",
+      "source": {
+        "tier": "C",
+        "raw": "Tier C · LV-TEH corporate"
+      }
+    },
+    {
+      "code": "SEN-AL",
+      "name": "SENER",
+      "country": "ES",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "faceId": "F4",
+          "role": "S",
+          "x": 2,
+          "y": 2
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 1,
+      "funding_scale": 4,
+      "last_raise": "Private",
+      "round_info": "Family-held",
+      "headcount": "~2,500",
+      "deployment_signal": "ALANO modular UGV · FCAS/NGWS aligned",
+      "key_partnerships": [],
+      "note": "Spanish Legacy. AI navigation + secure comms.",
+      "source": {
+        "tier": "A",
+        "raw": "Tier A · SENER corporate"
+      }
+    },
+    {
+      "code": "SAS-TL",
+      "name": "SASCorp",
+      "country": "ES",
+      "doctrine": {
+        "code": "E",
+        "label": "Logistics Specialist"
+      },
+      "positions": [
+        {
+          "faceId": "F1",
+          "role": "P",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "faceId": "F5",
+          "role": "S",
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "cadence_score": 1,
+      "deployment_score": 0,
+      "funding_scale": 1,
+      "last_raise": "[tc]",
+      "round_info": "Prototype phase",
+      "headcount": "[tc]",
+      "deployment_signal": "Tellus / Valkyrie 6x6 amphibious · Spanish Navy Armada 2050",
+      "key_partnerships": [],
+      "note": "Heavy amphibious prototype. Civil potential.",
+      "source": {
+        "tier": "C",
+        "raw": "Tier C · SASCorp corporate"
+      }
+    }
+  ],
+  "partnerships": [
+    {
+      "from": "TEN-TM",
+      "to": "INS-TM",
+      "from_name": "Tencore",
+      "to_name": "INSTA Group",
+      "type": "jv",
+      "label": "Tencore × INSTA Group · Cooperation agreement Feb 2026 · TerMIT FI production"
+    },
+    {
+      "from": "TEN-TM",
+      "to": "QSY-MA",
+      "from_name": "Tencore",
+      "to_name": "Quantum Systems",
+      "type": "jv",
+      "label": "Quantum Tencore Industries (QTI) · MoU Feb 2026 → formal launch 14 Apr 2026 Berlin"
+    },
+    {
+      "from": "TEN-TM",
+      "to": "SHK-CO",
+      "from_name": "Tencore",
+      "to_name": "Shark Robotics",
+      "type": "jv",
+      "label": "Tencore × Shark Robotics · JV signed 22 Apr 2026 Brussels EU-UA Forum"
+    },
+    {
+      "from": "TEN-TM",
+      "to": "DEV-TW",
+      "from_name": "Tencore",
+      "to_name": "DevDroid",
+      "type": "partnership",
+      "label": "Tencore × DevDroid · Machine gun mount components"
+    },
+    {
+      "from": "RHM-MM",
+      "to": "DOK-MV",
+      "from_name": "Rheinmetall",
+      "to_name": "DOK-ING",
+      "type": "cross-face",
+      "label": "Rheinmetall × DOK-ING · Partnership Oct 2024 → Acquisition 51% signed 4 Mar 2026 Zagreb · Komodo platform + Wingman"
+    },
+    {
+      "from": "QSY-MA",
+      "to": "ARX-GE",
+      "from_name": "Quantum Systems",
+      "to_name": "ARX Robotics",
+      "type": "partnership",
+      "label": "Quantum Systems × ARX Robotics · UGV-aerial integration via MOSAIC UXS"
+    }
+  ]
+}

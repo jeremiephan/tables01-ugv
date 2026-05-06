@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ================================================================
+  Starburst Tables 01 · UGV — Open Graph image template
+  ================================================================
+  Dimensions: 1200 × 630 (LinkedIn, Twitter, Facebook standard)
+
+  TO USE IN PRODUCTION:
+  1. Open this SVG in a vector tool (Figma, Illustrator, Affinity Designer)
+     OR open in browser, screenshot, crop to 1200×630
+     OR use rsvg-convert / inkscape CLI:
+        rsvg-convert -w 1200 -h 630 og-image.svg > og-image.png
+  2. Save as og-image.png in /assets/og-image.png
+  3. Verify in <head> meta tags: og:image points to /assets/og-image.png
+  4. Test with LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+  5. Test with Twitter Card Validator: https://cards-dev.twitter.com/validator
+
+  Replace this template with a real screenshot of the cube + portfolio
+  for higher production quality once Cycle 7 PNG generation is implemented.
+  ================================================================
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1220"/>
+      <stop offset="100%" stop-color="#161e35"/>
+    </linearGradient>
+    <radialGradient id="cube-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c441" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#e8c441" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#e8c441" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+
+  <!-- Cube glow accent -->
+  <circle cx="780" cy="315" r="280" fill="url(#cube-glow)"/>
+
+  <!-- Cube isometric (right side, ~580-980 horizontal, 80-560 vertical) -->
+  <g transform="translate(780, 315)">
+    <!-- Cube wireframe — isometric projection -->
+    <!-- Front face (F2 Combat AP - brick red) -->
+    <polygon points="-130,-100 130,-130 130,170 -130,140"
+             fill="#a55c4f" fill-opacity="0.18" stroke="#a55c4f" stroke-opacity="0.5" stroke-width="1.5"/>
+    <!-- Top face (F4 ISR - blue) -->
+    <polygon points="-130,-100 130,-130 230,-180 -30,-150"
+             fill="#5a8fd4" fill-opacity="0.12" stroke="#5a8fd4" stroke-opacity="0.5" stroke-width="1.5"/>
+    <!-- Right face (F1 Logistics - green) -->
+    <polygon points="130,-130 230,-180 230,120 130,170"
+             fill="#5e8a6e" fill-opacity="0.15" stroke="#5e8a6e" stroke-opacity="0.5" stroke-width="1.5"/>
+
+    <!-- Inner grid lines on faces -->
+    <line x1="-43" y1="-110" x2="-43" y2="150" stroke="#2a3550" stroke-opacity="0.5" stroke-width="0.5"/>
+    <line x1="43" y1="-120" x2="43" y2="160" stroke="#2a3550" stroke-opacity="0.5" stroke-width="0.5"/>
+    <line x1="-130" y1="-13" x2="130" y2="-30" stroke="#2a3550" stroke-opacity="0.5" stroke-width="0.5"/>
+    <line x1="-130" y1="60" x2="130" y2="40" stroke="#2a3550" stroke-opacity="0.5" stroke-width="0.5"/>
+
+    <!-- Sample dots — country colors -->
+    <!-- UA dots (gold-yellow) -->
+    <circle cx="-50" cy="0" r="6" fill="#e8c441"/>
+    <circle cx="-30" cy="-50" r="5" fill="#e8c441"/>
+    <!-- DE dots (interactive blue) -->
+    <circle cx="40" cy="-30" r="6" fill="#5a8fd4"/>
+    <circle cx="80" cy="50" r="5" fill="#5a8fd4"/>
+    <!-- USA dots (violet) on top face -->
+    <circle cx="-10" cy="-130" r="5" fill="#a47fc4"/>
+    <circle cx="100" cy="-160" r="5" fill="#a47fc4"/>
+    <!-- IL dot (warm tan) on right face -->
+    <circle cx="170" cy="20" r="5" fill="#d4a574"/>
+    <!-- HR dot (brick) -->
+    <circle cx="-80" cy="80" r="4" fill="#a55c4f"/>
+
+    <!-- "Your portfolio" highlighted dots — gold with glow -->
+    <circle cx="-50" cy="0" r="10" fill="none" stroke="#e8c441" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle cx="40" cy="-30" r="10" fill="none" stroke="#e8c441" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle cx="80" cy="50" r="10" fill="none" stroke="#e8c441" stroke-opacity="0.5" stroke-width="1.5"/>
+
+    <!-- Face labels -->
+    <text x="0" y="155" text-anchor="middle" fill="#a55c4f" font-family="JetBrains Mono, monospace"
+          font-size="12" font-weight="600" letter-spacing="2">F2 · COMBAT AP</text>
+    <text x="180" y="-10" text-anchor="middle" fill="#5e8a6e" font-family="JetBrains Mono, monospace"
+          font-size="12" font-weight="600" letter-spacing="2" transform="rotate(20 180 -10)">F1 · LOGISTICS</text>
+  </g>
+
+  <!-- Left side : text content -->
+  <g transform="translate(80, 100)">
+    <!-- Eyebrow -->
+    <text x="0" y="0" fill="#6b7489" font-family="JetBrains Mono, monospace"
+          font-size="14" font-weight="600" letter-spacing="3">TABLES 01 · UGV · APRIL 2026</text>
+
+    <!-- Main title -->
+    <text x="0" y="60" fill="#e8e8ea" font-family="Source Serif 4, serif"
+          font-size="56" font-style="italic" font-weight="400">Five markets,</text>
+    <text x="0" y="125" fill="#e8e8ea" font-family="Source Serif 4, serif"
+          font-size="56" font-style="italic" font-weight="400">superposed.</text>
+
+    <!-- Deck -->
+    <text x="0" y="195" fill="#a0a8bc" font-family="IBM Plex Sans, sans-serif"
+          font-size="22" font-weight="400">Compose your UGV portfolio.</text>
+    <text x="0" y="225" fill="#a0a8bc" font-family="IBM Plex Sans, sans-serif"
+          font-size="22" font-weight="400">See it projected on the structural cube.</text>
+
+    <!-- Bullets -->
+    <g transform="translate(0, 285)">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#e8c441" stroke-width="1.5"/>
+      <text x="32" y="5" fill="#a0a8bc" font-family="IBM Plex Sans, sans-serif" font-size="16" font-weight="500">
+        39 active operators · 14 Western countries
+      </text>
+    </g>
+    <g transform="translate(0, 320)">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#e8c441" stroke-width="1.5"/>
+      <text x="32" y="5" fill="#a0a8bc" font-family="IBM Plex Sans, sans-serif" font-size="16" font-weight="500">
+        Sourced via Reuters · Bloomberg · Janes · Defense Post
+      </text>
+    </g>
+    <g transform="translate(0, 355)">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#e8c441" stroke-width="1.5"/>
+      <text x="32" y="5" fill="#a0a8bc" font-family="IBM Plex Sans, sans-serif" font-size="16" font-weight="500">
+        Companion white paper · June 2026
+      </text>
+    </g>
+
+    <!-- CTA -->
+    <g transform="translate(0, 430)">
+      <rect x="-2" y="-26" width="240" height="52" fill="none" stroke="#e8c441" stroke-width="1.5"/>
+      <text x="118" y="6" text-anchor="middle" fill="#e8c441" font-family="JetBrains Mono, monospace"
+            font-size="13" font-weight="600" letter-spacing="2">EXPLORE THE INSTRUMENT →</text>
+    </g>
+
+    <!-- Brand at bottom -->
+    <g transform="translate(0, 510)">
+      <text x="0" y="0" fill="#4a5366" font-family="JetBrains Mono, monospace"
+            font-size="11" font-weight="600" letter-spacing="3">STARBURST AEROSPACE &amp; DEFENSE</text>
+      <text x="0" y="20" fill="#6b7489" font-family="IBM Plex Sans, sans-serif"
+            font-size="12" font-style="italic">tables01.starburst.aero</text>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Tables 01 · UGV — Signature shot for Open Graph / Twitter Cards
+  Dimensions: 1200×630 (LinkedIn-optimized)
+  Cycle E.3 deliverable.
+  PROD: convert to PNG via `inkscape og-image.svg -w 1200 -h 630 -o og-image.png`
+        or `magick convert og-image.svg og-image.png`
+        before deployment. LinkedIn does not accept SVG OG images.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background graphite -->
+  <rect width="1200" height="630" fill="#0d1220"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="rgba(90,143,212,0.10)" stroke-width="1">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+  </g>
+
+  <!-- Cube isometric projection (3 visible faces) -->
+  <g transform="translate(820, 315)">
+    <!-- Top face (F4 ISR) -->
+    <polygon points="-160,-180 0,-260 160,-180 0,-100"
+             fill="#1a2440" stroke="#2a3a5a" stroke-width="1.5"/>
+    <text x="0" y="-180" font-family="IBM Plex Mono, monospace" font-size="11"
+          fill="#7a8aa3" text-anchor="middle" letter-spacing="1.5">F4 ISR</text>
+
+    <!-- Left face (F1 Logistics) -->
+    <polygon points="-160,-180 -160,80 0,160 0,-100"
+             fill="#1f2940" stroke="#2a3a5a" stroke-width="1.5"/>
+    <text x="-80" y="-50" font-family="IBM Plex Mono, monospace" font-size="11"
+          fill="#7a8aa3" text-anchor="middle" letter-spacing="1.5">F1 LOGISTICS</text>
+
+    <!-- Front face (F2 Combat AP — saturated) -->
+    <polygon points="0,-100 160,-180 160,80 0,160"
+             fill="#241a1a" stroke="#a55c4f" stroke-width="2"/>
+    <text x="80" y="-50" font-family="IBM Plex Mono, monospace" font-size="11"
+          fill="#a55c4f" text-anchor="middle" letter-spacing="1.5" font-weight="600">F2 COMBAT AP</text>
+
+    <!-- Dots on faces (operators) -->
+    <!-- F2 Combat AP front face dots -->
+    <circle cx="60" cy="-30" r="5" fill="#e8c441"/>
+    <circle cx="100" cy="0" r="5" fill="#5a8fd4"/>
+    <circle cx="80" cy="60" r="5" fill="#5a8fd4"/>
+    <circle cx="130" cy="-50" r="4" fill="#a55c4f"/>
+    <circle cx="40" cy="100" r="4" fill="#7a4f5e"/>
+
+    <!-- F1 Logistics left face dots -->
+    <circle cx="-100" cy="-100" r="5" fill="#e8c441"/>
+    <circle cx="-60" cy="-50" r="4" fill="#5a8fd4"/>
+    <circle cx="-130" cy="40" r="5" fill="#6c7faa"/>
+
+    <!-- F4 ISR top face dots -->
+    <circle cx="-50" cy="-200" r="4" fill="#5a8fd4"/>
+    <circle cx="50" cy="-220" r="4" fill="#5a8fd4"/>
+    <circle cx="0" cy="-180" r="4" fill="#5a8fd4"/>
+
+    <!-- F6 Convergence flow lines (golden) -->
+    <g stroke="#e8c441" stroke-width="1.5" fill="none" opacity="0.7" stroke-dasharray="3 2">
+      <line x1="60" y1="-30" x2="-100" y2="-100"/>
+      <line x1="60" y1="-30" x2="50" y2="-220"/>
+      <line x1="100" y1="0" x2="-50" y2="-200"/>
+      <line x1="80" y1="60" x2="40" y2="100"/>
+    </g>
+  </g>
+
+  <!-- Title block left -->
+  <g transform="translate(80, 200)">
+    <text font-family="IBM Plex Mono, monospace" font-size="13" fill="#e8c441"
+          letter-spacing="3" font-weight="600">TABLES 01 · UGV</text>
+    <text y="50" font-family="Source Serif 4, Georgia, serif" font-size="44"
+          fill="#e8e8ea" font-weight="600" letter-spacing="-0.5">The European</text>
+    <text y="100" font-family="Source Serif 4, Georgia, serif" font-size="44"
+          fill="#e8e8ea" font-weight="600" letter-spacing="-0.5">UGV market —</text>
+    <text y="150" font-family="Source Serif 4, Georgia, serif" font-size="44"
+          fill="#e8c441" font-weight="600" letter-spacing="-0.5" font-style="italic">mapped.</text>
+
+    <text y="210" font-family="IBM Plex Sans, sans-serif" font-size="16"
+          fill="#a0a8bc" letter-spacing="0.3">39 operators · 14 countries · 5 markets superposed</text>
+    <text y="235" font-family="IBM Plex Sans, sans-serif" font-size="16"
+          fill="#a0a8bc" letter-spacing="0.3">Q1 2026 · Starburst A&amp;D</text>
+  </g>
+
+  <!-- Footer branding -->
+  <g transform="translate(80, 580)">
+    <text font-family="IBM Plex Mono, monospace" font-size="11" fill="#7a8aa3"
+          letter-spacing="2">STARBURST AEROSPACE &amp; DEFENSE — TABLES01.STARBURST.AERO</text>
+  </g>
+
+  <!-- Top-right corner mark -->
+  <g transform="translate(1100, 80)">
+    <circle r="22" fill="none" stroke="#e8c441" stroke-width="1"/>
+    <text font-family="IBM Plex Mono, monospace" font-size="10" fill="#e8c441"
+          text-anchor="middle" dominant-baseline="middle" letter-spacing="1.5"
+          font-weight="700">F6</text>
+  </g>
+</svg>
